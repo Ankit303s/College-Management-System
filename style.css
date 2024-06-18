@@ -12,8 +12,31 @@ body{
     color: white;
 }
 .container{
+    padding: 0px 30px;
+    height: 60px;
     display: flex;
+    align-items: center;
+    
+    background-color: aqua;
 }
 .header .container{
     justify-content: space-between;
+}
+.navlink{
+    /* background-color: blueviolet; */
+    display: flex;
+    gap: 25px;
+   font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+}
+.navlink li{
+    list-style: none;
+}
+.navlink li a{
+    text-decoration: none;
+}
+#logo{
+    border-radius: 50%;
+   
+    height: 50px;
 }
