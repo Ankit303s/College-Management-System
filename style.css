@@ -16,7 +16,6 @@ body{
     height: 60px;
     display: flex;
     align-items: center;
-    
     background-color: aqua;
 }
 .header .container{
@@ -26,7 +25,6 @@ body{
     /* background-color: blueviolet; */
     display: flex;
     gap: 25px;
-   font-family: 'Times New Roman', Times, serif;
     width: 80%;
 }
 .navlink li{
@@ -37,6 +35,5 @@ body{
 }
 #logo{
     border-radius: 50%;
-   
     height: 50px;
 }
