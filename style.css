@@ -36,9 +36,10 @@ body{
     margin-right: 20px;
     color: #fff;
 }
-.top_header .contacts a i{
+.top_header i{
     color: #fff;
     font-size: 1rem;
+    margin-right: 10px;
 }
 .buttom_header{
     justify-content: space-between;
@@ -46,6 +47,7 @@ body{
 }
 .navlink{
     display: flex;
+    font-weight: 500;
     gap: 25px;
 }
 #logo{
