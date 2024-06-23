@@ -107,3 +107,25 @@ body{
     height: 100%;
     object-fit: cover;
 }
+.placement img{
+    width: 100vw;
+}
+.news{
+    background-color: rgb(0, 0, 85);
+    color: #fff;
+}
+main{
+    margin: 20px 90px;
+}
+.about{
+    display: flex;
+}
+.about-us{
+    line-height: 1.5rem;
+    color: rgb(0, 0, 85);
+    max-width: 600px;
+    max-height: 400px;
+}
+.about-us p{
+    font-size: 16px;
+}
