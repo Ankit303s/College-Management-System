@@ -18,6 +18,8 @@ const first_slide = () => {
 
 right_slider.addEventListener( 'click', () => {
     slidenumber < sl_length ? next_slide() : first_slide()
+    stopAutoSlide();
+    startAutoSlide();
 });
 
 //for left arrow
@@ -32,4 +34,18 @@ const last_slide = () => {
 }
 left_slider.addEventListener( 'click', () => {
     slidenumber > 1 ? previous_slide() : last_slide()
+    stopAutoSlide();
+    startAutoSlide();
 });
+
+const startAutoSlide = () => {
+    autoSlideInterval = setInterval(() => {
+        next_slide()
+    }, 4000);
+}
+const stopAutoSlide = () => {
+    clearInterval(autoSlideInterval);
+}
+slider.addEventListener('mouseover', stopAutoSlide);
+slider.addEventListener('mouseout', startAutoSlide);
+startAutoSlide();

@@ -79,6 +79,7 @@ body{
     height: 40px;
     cursor: pointer;
     z-index: 10;
+    display: none;
 }
 
 .left-arrow {
@@ -87,6 +88,10 @@ body{
 .right-arrow {
     right: 10px;
     transform: rotate(180deg);
+}
+.image-slider:hover .left-arrow,
+.image-slider:hover .right-arrow {
+    display: block;
 }
 .frame{
     width: 100%;
