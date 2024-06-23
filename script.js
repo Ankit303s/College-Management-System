@@ -20,7 +20,7 @@ right_slider.addEventListener( 'click', () => {
 
 //for left arrow
 const previous_slide = () => {
-    slider.style.transform = `translateX(-${(slidenumber-1)*100}vw)`
+    slider.style.transform = `translateX(-${(slidenumber-2)*100}vw)`
     slidenumber--
 }
 
