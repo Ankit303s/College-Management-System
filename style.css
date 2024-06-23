@@ -73,17 +73,19 @@ body{
     background-color: #000000;
     
 }
-.left-arrow{
-    position: relative;
-    left: 10px;
-    height: 40px;
-    cursor: pointer;
-}
-.right-arrow{
+.left-arrow,
+.right-arrow {
     position: absolute;
-    right: 10px;
     height: 40px;
     cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+.right-arrow {
+    right: 10px;
     transform: rotate(180deg);
 }
 .frame{
