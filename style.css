@@ -19,6 +19,9 @@ body{
     justify-content: center;
     gap: 5px;
 }
+.btn_part img{
+    border-radius: 50%;
+}
 .contain{
     gap: 25px;
 }
