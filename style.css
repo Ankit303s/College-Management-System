@@ -69,9 +69,6 @@ i{
 .hamburg-links{
     display: none;
 }
-@media (max-width: 768px) {
-    
-}
 #logo{
     height: 50px;
 }
@@ -156,29 +153,19 @@ main{
 
 @media (max-width: 768px) {
     main {
-        margin: 20px 30px; /* Adjusted margin for smaller screens */
+        margin: 20px 30px;
     }
     .top_header{
         display: none;
     }
-    .navlink{
+
+    .navlink {
         display: none;
     }
     .hamburg-links{
-        display: inline-block;
-
+        display: block;
     }
 
-    .navlink {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items vertically */
-    }
-
-    .navlink li {
-        margin: 5px 0; /* Adjust margin between stacked items */
-        text-align: center; /* Center text */
-        width: 100%; /* Ensure full width for stacked items */
-    }
     .about-us p {
         font-size: 0.9rem;
         line-height: 1.1rem;
