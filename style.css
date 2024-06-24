@@ -25,9 +25,10 @@ body{
 .contain{
     gap: 25px;
 }
-.container{
+.header-container{
     padding: 0px 30px;
     height: 60px;
+    width: 100vw;
     display: flex;
     align-items: center;
 }
