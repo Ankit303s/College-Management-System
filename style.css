@@ -22,15 +22,14 @@ body{
 .btn_part img{
     border-radius: 50%;
 }
-.contain{
-    gap: 25px;
+.container{
+    display: flex;
+    align-items: center;
 }
 .header-container{
     padding: 0px 30px;
     height: 60px;
     width: 100vw;
-    display: flex;
-    align-items: center;
 }
 .top_header{
     justify-content: space-around;
@@ -124,11 +123,8 @@ i{
     background-color: rgb(0, 0, 85);
     color: #fff;
 }
-main{
-    margin: 20px 90px;
-}
-.about{
-    display: flex;
+.container{
+    margin: 30px 90px;
     justify-content: space-between;
 }
 .about-us{
@@ -151,8 +147,8 @@ main{
     word-wrap: break-word; 
 }
 .notice-board{
-    width: 300px;
-    height: 300px;
+    width: 340px;
+    height: 340px;
 }
 .notice-board h4{
     margin-bottom: 5px;
@@ -169,8 +165,28 @@ main{
     font-size: 15px;
     list-style: disc;
     font-weight: 400;
-    
 }
+.categories{
+    border: #000000 solid 2px;
+    background-color: #e7f8ff;
+}
+.sec-title{
+    margin-bottom: 20px;
+}
+.sec-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.section{
+    width: 40px;
+    height: 30px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    background-color: yellow;
+}
+
 
 @media (max-width: 768px) {
     main {
