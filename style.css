@@ -92,6 +92,10 @@ i{
 #logo{
     height: 50px;
 }
+
+
+/* Image slider start */
+
 .image-slider{
     margin: 0 30px;
     position: relative;
@@ -172,6 +176,7 @@ i{
 .about-right{
     box-sizing: border-box; padding: 10px 10px;
     position: relative; width: 550px;
+    height: 500px;
     background-color: #f5f5f5;
 }
 
@@ -186,6 +191,17 @@ i{
     display: table-cell;
     padding-left: 10px; line-height: 25px;
 }
+
+.box-hover:hover {
+    background: linear-gradient(-135deg, #4570e7 0%, #79f1fc 100%);
+    border-radius: 15px;
+}
+.box-hover p:hover{
+    color: white; transition: all 1.5s linear;
+}
+
+/* Notice Section Start */
+
 .notice-board{
     margin: auto; max-width: 500px; padding: 60px 4px;
 }
