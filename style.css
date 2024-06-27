@@ -186,6 +186,93 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
     display: none;
 }
 
+
+/* login section */
+
+.account-form{
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 35rem;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    justify-content: center;
+    height: 100%;
+    z-index: 1200;
+    padding: 2rem;
+    text-align: center;
+}
+
+.account-form.active{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+}
+
+.account-form #close-form{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: #444;
+}
+
+.account-form #close-form:hover{
+    transform: rotate(90deg);
+}
+
+.account-form form {
+    border: 0.1rem solid #4e65ff;
+    padding: 2rem;
+    display: none;
+}
+
+.account-form form.active{
+    display: block;
+}
+
+.account-form form h3{
+    font-size: 2.5rem;
+    color: #444;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+.account-form form .box{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border: 0.1rem solid cyan;
+    font-size: 1rem;
+    margin: .7rem 0;
+}
+
+.account-form form .flex{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.account-form form .flex label{
+    font-size: 1rem;
+    color: #777;
+    margin-left: auto;
+}
+
+.account-form form .flex{
+    text-decoration: underline;
+    color: aqua;
+}
+.account-form .btn{
+    width: 100%;
+    height: 40px;
+}
+
+
 /* Image slider start */
 
 .image-slider{
