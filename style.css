@@ -334,6 +334,117 @@ legend { font-size: 12px; padding: 0 5px; color: white; background: red; border-
     text-transform: uppercase; display: inline-block; margin-left: 20px;
 }
 
+/* course section start */
+
+.section-flex{ box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: center;}
+
+.course-section { box-sizing: border-box; margin: auto; max-width: 100%; width: 950px; padding: 50px 0px; }
+
+.course-box{ box-sizing: border-box; margin: 10px 20px; position: relative; width: 420px; background-color: #eeeff4; border-radius: 0 25px ; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px; } 
+
+.course-head{ margin: 0 auto; position: relative; padding: 30px 25px 30px;}
+
+.course-head h4{ color: #3bbca7; font-size: 24px; margin-left: 30px; margin-bottom: 20px; }
+
+.course-head li{ color: #072f60; font-size: 20px; line-height: 20px; margin: 10px 50px; font-weight: inherit;}
+
+.course-head .button {
+
+    background-color: #3bbca7;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 2px 25px;
+    text-decoration: none;
+}
+
+.course-head .button:hover{ transform: scale(0.95);}
+
+.course-image img{
+    float: right;
+    position: relative;
+    width: 360px;
+    max-width: 100%;
+    outline: 2px;
+    overflow: hidden;
+}
+
+footer{
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+footer .content{
+    max-width: 90%;
+    margin: auto;
+    padding: 30px 40px 30px;
+}
+
+footer .content .top{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 50px ;
+}
+
+.content .top .logo-details{
+    color: #fff;
+    font-size: 30px
+}
+
+.content .top .media-icons a{
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.4s ease;
+}
+.media-icons a i{
+    font-size: 2rem;
+}
+
+footer .content .link-boxes{
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .link-boxes .box{
+    width: calc(100%/5 -10px);
+}
+
+.link-boxes .box .link-name{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.link-boxes .box li {
+    margin: 8px 0;
+    list-style: none;
+}
+
+.link-boxes .box li a{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all 0.4s ease; display: block;
+}
+
 
 @media (max-width: 768px) {
     main {
