@@ -157,9 +157,11 @@ i{
 .about-section-head p { color: #666d81;}
 
 .about-left{
-    box-sizing: border-box; padding: 30px 15px;
-     position:relative; width: 650px;
-     margin: 0 10px 5px 0;
+    box-sizing: border-box;
+    padding: 30px 15px;
+    position:relative;
+    width: 650px;
+    margin: 0 10px 5px 0;
 }
 
 .btn{
@@ -176,7 +178,6 @@ i{
 .about-right{
     box-sizing: border-box; padding: 10px 10px;
     position: relative; width: 550px;
-    height: 500px;
     background-color: #f5f5f5;
 }
 
@@ -214,15 +215,6 @@ i{
     border-radius: 20px 20px 0 0;
 }
 .line span{ position: relative;}
-.line span::before{
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 105%;
-    height: 3px;
-    border-radius: 10px;
-    background: linear-gradient(145deg, transparent, #9600ff 20%, cyan 80%, transparent);
-}
 .notice-board h4{
     font-size: 25px;
     text-align: center;
@@ -256,7 +248,7 @@ i{
 .alert-box a{
     font-weight: 400;
     font-size: 20px;
-    color: #000;
+    color: #003afa;
     line-height: 30px;
     white-space: pre-wrap;
 }
