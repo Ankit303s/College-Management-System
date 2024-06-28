@@ -63,7 +63,6 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
 }
 
 .header .logo{
-    width: 600px;
     display: flex;
     margin-right: auto;
     color: #444;
@@ -192,7 +191,7 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
 .account-form{
     position: fixed;
     top: 0;
-    right: -105%;
+    right: -205%;
     width: 35rem;
     background: #fff;
     display: flex;
@@ -335,6 +334,10 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
 .about-section-head .about-container { width: 1260px;}
 .about-section-head p { color: #666d81;}
 
+.section-title{
+    text-align: center;
+    width: 1300px;
+}
 .about-left{
     box-sizing: border-box;
     padding: 30px 15px;
@@ -381,39 +384,38 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
 }
 
 /* Notice Section Start */
-.notice-container{ box-sizing: border-box; margin: auto; width: 1110px; max-width: 100%;}
+.notice-container{ box-sizing: border-box;
+    margin: auto;
+    width: 1110px;
+    max-width: 100%;
+    padding: 20px;
+    }
 
 .notice-board{
-    margin: auto; max-width: 500px; padding: 60px 4px;
+    margin: auto;
+    width: 400px;
+    height: 420px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px 0px #ccc;
+    overflow: hidden;
 }
 
 .notice-heading{
     padding: 3.5px;
     background: linear-gradient(145deg, cyan 15%, #9600ff 90%);
     height: 50px;
-    border-radius: 20px 20px 0 0;
 }
-.line span{ position: relative;}
 .notice-board h4{
     font-size: 25px;
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
 }
-.first-box, .second-box, .third-box{
-    margin: 0px 10px;
-    border-radius: 20px;
+.notice-box{
     background: #fff;
-    box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.5);
-}
-.third-box{
-    margin: 0px 10px;
-    height: 500px;
-    background: #fff;
-    padding-left: 5px;
     overflow: hidden;
 }
-.third-box marquee { height: 500px; }
+.notice-box marquee { height: 500px; }
 
 .alert-box {
     width: 90%;
@@ -421,8 +423,7 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
     padding:5px 10px;
     position: relative;
     background-color: #f5f5f5;
-    border-radius: 5px;
-    box-shadow: 10px 5px 5px 0px #ccc;
+    
 }
 .alert-box a{
     font-weight: 400;
@@ -453,12 +454,11 @@ legend { font-size: 12px; padding: 0 5px; color: white; background: red; border-
 /* up coming events */
 .upcoming-event-section{
     margin: auto;
-    border: 2px solid; 
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px 0px #ccc;
     width: 380px; height: 420px;
     box-sizing: border-box;
     background: #f5f5f5;
-    border-image-slice: 1; 
-    border-image-source: linear-gradient(145deg,pink, #9600ff 20%, cyan 80%, transparent);
 }
 .event-header{
     text-align: center;
@@ -468,26 +468,28 @@ legend { font-size: 12px; padding: 0 5px; color: white; background: red; border-
 
 .event-header h3{ font-size: 22px; font-weight: 400; line-height: 40px;
     margin-bottom: 0px;
+    border-bottom: 2px solid gray;
 }
 
 .event-body{
     margin: 0px; padding: 0px;
 }
 .event-box{
-    border: 1px solid #ddd;
     box-sizing: border-box;
-    margin: 0px;
+    padding: 10px 0;
     overflow: hidden;
     transition: 0.3s ease-out;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid rgb(167, 167, 167);
 }
 .event-box:hover{ transform: translate(0, 5px);}
 
 .time-form{ 
-    border: 1px solid cyan;
+    border: 1px solid rgb(0, 0, 231);
     box-sizing: border-box;
-    color: cyan;
+    color: rgb(0, 0, 231);
     float: left;
-    margin: 0px;
+    margin: 0 5px;
     text-align: center;
     width: 48px;
 }
@@ -612,6 +614,8 @@ footer .content .link-boxes{
 }
 
 .link-boxes .box li {
+    color: #fff;
+    font-size: 19px;
     margin: 8px 0;
     list-style: none;
 }
