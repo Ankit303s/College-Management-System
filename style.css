@@ -14,7 +14,26 @@ body{
 
 h1,h2,h3,h4,h5,h6,p { margin: 0;}
 
-h1 { font-size: 36px;font-size: 700; }
+img {
+    user-select: none;
+  }
+  
+body,html {
+line-height: 1.5;
+overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    box-sizing: 0 0 10px 10px #0300aa;
+    background-color: #003afa5e;
+}
+  
+html::-webkit-scrollbar-thumb {
+background: #0300aa;
+
+}
+  
+h1 { font-size: 36px; font-size: 700; }
 h2 { font-size: 32px; font-weight: 600; line-height: 36px; }
 h3 { font-size: 26px; font-weight: 500; line-height: 30px; }
 h4 { font-size: 24px; font-weight: 400; margin: 10px 5px; line-height: 26px; }
@@ -331,7 +350,10 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
 /* About us section start */
 
 .about-section-head { padding: 50px 0px 20px;}
-.about-section-head .about-container { width: 1260px;}
+.about-section-head .about-container { 
+    width: 1260px;
+    background-color: #f5f5f5;
+}
 .about-section-head p { color: #666d81;}
 
 .section-title{
@@ -360,7 +382,6 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
 .about-right{
     box-sizing: border-box; padding: 10px 10px;
     position: relative; width: 550px;
-    background-color: #f5f5f5;
 }
 
 .about-icon{
@@ -380,7 +401,7 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
     border-radius: 15px;
 }
 .box-hover p:hover{
-    color: white; transition: all 1.5s linear;
+    color: white; transition: all 0.3s linear;
 }
 
 /* Notice Section Start */
@@ -615,7 +636,7 @@ footer .content .link-boxes{
 
 .link-boxes .box li {
     color: #fff;
-    font-size: 19px;
+    font-size: 25px;
     margin: 8px 0;
     list-style: none;
 }
