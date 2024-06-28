@@ -24,13 +24,12 @@ overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
-    box-sizing: 0 0 10px 10px #0300aa;
     background-color: #003afa5e;
 }
   
 html::-webkit-scrollbar-thumb {
 background: #0300aa;
-
+box-shadow: 0px 0px 5vmin 5vmin rgb(109, 93, 255);
 }
   
 h1 { font-size: 36px; font-size: 700; }
