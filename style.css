@@ -632,7 +632,7 @@ footer .content .link-boxes{
     width: calc(100%/5 -10px);
 }
 
-.link-boxes .box .link-name{
+.link-boxes .box .link_name{
     color: #fff;
     font-size: 25px;
     font-weight: 400;
