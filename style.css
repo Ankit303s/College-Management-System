@@ -599,7 +599,7 @@ footer .content .top{
     justify-content: space-between;
     border-bottom: 1px solid #fff;
     padding-bottom: 10px;
-    margin-bottom: 50px ;
+    margin-bottom: 30px ;
 }
 
 .content .top .logo-details{
@@ -636,7 +636,7 @@ footer .content .link-boxes{
     color: #fff;
     font-size: 25px;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     position: relative;
 }
 
