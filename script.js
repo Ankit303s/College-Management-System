@@ -9,7 +9,6 @@ const images = [
     './Assets/image-slide/sl4.png',
     './Assets/image-slide/sl5.png',
     './Assets/image-slide/sl6.png',
-    './Assets/image-slide/sl7.png',
     './Assets/image-slide/sl8.jpg',
     './Assets/image-slide/sl9.jpg',
     './Assets/image-slide/sl10.jpg',
@@ -25,6 +24,8 @@ images.forEach(src => {
     const img = document.createElement('img');
     img.src = src;
     img.style.width = '100vw';
+    img.style.height = '500px'
+    // img.object.fit = 'fill'
     slider.appendChild(img);
 });
 
@@ -73,12 +74,12 @@ startAutoSlide();
 
 
 
-let accountForm = document.querySelector('.account-form')
+// let accountForm = document.querySelector('.account-form')
 
-document.querySelector('#account-btn').onclick = () =>{
-  accountForm.classList.add('active');
-}
+// document.querySelector('#account-btn').onclick = () =>{
+//   accountForm.classList.add('active');
+// }
 
-document.querySelector('#close-form').onclick = () =>{
-  accountForm.classList.remove('active');
-};
+// document.querySelector('#close-form').onclick = () =>{
+//   accountForm.classList.remove('active');
+// };
