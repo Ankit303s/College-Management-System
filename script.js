@@ -24,6 +24,7 @@ let slideIndex = 0;
 images.forEach(src => {
     const img = document.createElement('img');
     img.src = src;
+    img.style.width = '100vw';
     slider.appendChild(img);
 });
 
