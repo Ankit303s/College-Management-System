@@ -17,6 +17,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
     <style>
+        .header{
+            position: relative;
+        }
         body{
             box-sizing: border-box;
         }
@@ -27,7 +30,7 @@
             flex-direction: column;
             font-family: 'monserrat', sans-serif;
             min-height: 100%;
-            margin: 10% 0;
+            margin: 2% 0;
         }
         .container{
             position: relative;
@@ -85,6 +88,9 @@
             border-radius: 5px;
             border: none;
             outline: none;
+        }
+        input:focus{
+            box-shadow: 0 0 10px black;
         }
         a{
             color: #333;
@@ -283,13 +289,15 @@
                 <div class="overlay-container">
                     <div class="overlay">
                         <div class="overlay-left">
-                            <h1>Wellcome Back!</h1>
-                            <p>To keep connected with us please login with your personal info</p>
+                            <h1>Hello, Friend</h1>
+                            <p>Enter your personal details and start journey with us</p>
+                            <p>If already have account please</p>
                             <button id="signIn">Sign In</button>
                         </div>
                         <div class="overlay-right">
-                            <h1>Hello, Friend</h1>
-                            <p>Enter your personal details and start journey with us</p>
+                            <h1>Wellcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <p>If didn't have account please</p>
                             <button id="signUp">Sign Up</button>
                         </div>
                     </div>
