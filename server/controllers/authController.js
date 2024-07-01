@@ -13,7 +13,7 @@ exports.signup = async (req, res) => {
   }
 };
 
-exports.login = async (req, res) => {
+exports.login1 = async (req, res) => {
   const { username, password } = req.body;
   try {
     const user = await User.findOne({ username });
