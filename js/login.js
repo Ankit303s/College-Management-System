@@ -1,21 +1,25 @@
-document.getElementById('loginForm').addEventListener('submit', async (e) => {
+document.getElementById('login-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    const username = document.getElementById('username').value;
+    
+    const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-  
-    const res = await fetch('/api/auth/login1', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
-    });
-  
-    if (res.ok) {
-      const data = await res.json();
-      localStorage.setItem('token', data.token);
-      alert('Login successful');
-      window.location.href = 'index.html';
-    } else {
-      alert('Login failed');
+
+    try {
+        const res = await fetch('/api/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password })
+        });
+        const data = await res.json();
+
+        if (res.ok) {
+            alert('Login successful! Redirecting to homepage...');
+            window.location.href = 'index.html';
+        } else {
+            alert(data.message || 'Login failed!');
+        }
+    } catch (err) {
+        console.error(err);
+        alert('An error occurred. Please try again.');
     }
-  });
-  
+});

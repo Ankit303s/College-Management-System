@@ -83,3 +83,6 @@ startAutoSlide();
 // document.querySelector('#close-form').onclick = () =>{
 //   accountForm.classList.remove('active');
 // };
+
+
+
