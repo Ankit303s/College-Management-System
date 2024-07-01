@@ -18,6 +18,8 @@ img {
     user-select: none;
   }
   
+html{ scroll-behavior: smooth;}
+
 body,html {
 line-height: 1.5;
 }
@@ -74,10 +76,10 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
     display: inline;
 }
 
-.close-icon img { 
+/* .close-icon img { 
     margin: 5px 5px 2.5px;
     border-radius: 100%;
-}
+} */
 
 .header .logo{
     display: flex;
@@ -165,16 +167,6 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
     font-size: .9rem;
 }
 
-.header .navbar #close-navbar{
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    font-size: 4rem;
-    cursor: pointer;
-    color: #444;
-    display: none;
-}
-
 .header .navbar a{
     margin-right: 2rem;
     font-size: 1rem;
@@ -200,92 +192,6 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
 
 .header #menu-btn{
     display: none;
-}
-
-
-/* login section */
-
-.account-form{
-    position: fixed;
-    top: 0;
-    right: -205%;
-    width: 35rem;
-    background: #fff;
-    display: flex;
-    flex-flow: column;
-    gap: 2rem;
-    justify-content: center;
-    height: 100%;
-    z-index: 1200;
-    padding: 2rem;
-    text-align: center;
-}
-
-.account-form.active{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-}
-
-.account-form #close-form{
-    position: absolute;
-    top: 1.5rem;
-    right: 2.5rem;
-    font-size: 4rem;
-    cursor: pointer;
-    color: #444;
-}
-
-.account-form #close-form:hover{
-    transform: rotate(90deg);
-}
-
-.account-form form {
-    border: 0.1rem solid #4e65ff;
-    padding: 2rem;
-    display: none;
-}
-
-.account-form form.active{
-    display: block;
-}
-
-.account-form form h3{
-    font-size: 2.5rem;
-    color: #444;
-    padding-bottom: .5rem;
-    text-transform: uppercase;
-}
-
-.account-form form .box{
-    width: 100%;
-    padding: 1.2rem 1.4rem;
-    border: 0.1rem solid cyan;
-    font-size: 1rem;
-    margin: .7rem 0;
-}
-
-.account-form form .flex{
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.account-form form .flex label{
-    font-size: 1rem;
-    color: #777;
-    margin-left: auto;
-}
-
-.account-form form .flex{
-    text-decoration: underline;
-    color: aqua;
-}
-.account-form .btn{
-    width: 100%;
-    height: 40px;
 }
 
 
@@ -329,13 +235,9 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
 }
 .slider{
     width: 100%;
+    height: 100%;
     display: flex;
     transition: 1s ease;
-}
-.image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 .placement img{
     width: 100%;
@@ -372,10 +274,24 @@ a,a:active,a:focus,button { text-decoration: none; outline: 0;}
     border: none;
     padding: 10px 20px;
     font-weight: 600;
-    background: linear-gradient(-135deg, #4570e7 0%, #79f1fc 100%);
+    background: linear-gradient(90deg, yellow, orange, red, violet, purple, blue, yellow);
+    background-size: 400%;
     color: white;
     border-radius: 20px;
 }
+
+.btn:hover {
+    animation: animate 8s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
 
 .about-right{
     box-sizing: border-box; padding: 10px 10px;
@@ -548,10 +464,52 @@ legend { font-size: 12px; padding: 0 5px; color: white; background: red; border-
 
 .section-flex{ box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: center;}
 
-.course-section { box-sizing: border-box; margin: auto; max-width: 100%; width: 950px; padding: 50px 0px; }
+.course-section { box-sizing: border-box; margin: auto; max-width: 100%; padding: 50px 0px; }
 
-.course-box{ box-sizing: border-box; margin: 10px 20px; position: relative; width: 420px; background-color: #eeeff4; border-radius: 0 25px ; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px; } 
+ .course-box{ 
+    box-sizing: border-box;
+    width: 350px;
+    padding: 25px;
+    margin: 10px 20px;
+    position: relative;
+    border: 1px black solid;
+    border-radius: 1px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 12px; 
+    transition: 0.4s linear;
+} 
+.course-box:hover{
+    background-color: rgb(69, 168, 250);
+    box-shadow: rgba(0, 0, 0, 0.555) 0px 3px 20px;
+}
 
+.course-box .img-part img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.course-box .course-content{
+    margin-bottom: 10px;
+}
+
+.course-content .price{
+    background: rgb(69, 168, 250);
+    color: white;
+    padding: 0 10px;
+    font-size: 18px;
+    transition: 0.4s linear;
+}
+.course-box:hover .price{
+    color: rgb(69, 168, 250);
+    background: white;
+}
+
+.course-content .categorie{
+    color: rgb(190, 190, 190);
+}
+
+.course-box:hover .categorie{
+    color: white;
+}
+/*
 .course-head{ margin: 0 auto; position: relative; padding: 30px 25px 30px;}
 
 .course-head h4{ color: #0300aa; font-size: 24px; margin-left: 30px; margin-bottom: 20px; }
@@ -579,7 +537,7 @@ legend { font-size: 12px; padding: 0 5px; color: white; background: red; border-
     max-width: 100%;
     outline: 2px;
     overflow: hidden;
-}
+} */
 
 footer{
     box-sizing: border-box;
