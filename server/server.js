@@ -24,11 +24,8 @@ app.get('*', (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-// MongoDB Atlas connection string
-const MONGODB_URI = 'mongodb+srv://ankitsingh:ankit%40123@cluster0.h3jnz7g.mongodb.net/CollegeManagement?retryWrites=true&w=majority';
-
 // Connect to DB and start server
-mongoose.connect(MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log('MongoDB connected');
         app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
