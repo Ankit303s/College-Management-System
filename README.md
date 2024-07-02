@@ -13,7 +13,6 @@ This project is a full-stack web application that includes both frontend and bac
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -79,5 +78,22 @@ This project is a full-stack web application that includes both frontend and bac
 1. Open your browser and navigate to the login page.
 2. Sign up for a new account or log in with existing credentials.
 3. Access the notice board and courses sections from the main interface.
+
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/your-feature-name`).
+6. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 
