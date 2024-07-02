@@ -50,13 +50,13 @@ This project is a full-stack web application that includes both frontend and bac
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://ankit303s.github.io/Collage-Management-System/
+    cd Collage-Management-System
     ```
 
 2. **Install backend dependencies:**
     ```bash
-    cd backend
+    cd server
     npm install
     ```
 
@@ -68,7 +68,7 @@ This project is a full-stack web application that includes both frontend and bac
 
 4. **Run the backend server:**
     ```bash
-    npm start
+    node server.js
     ```
 
 5. **Serve the frontend:**
@@ -79,7 +79,5 @@ This project is a full-stack web application that includes both frontend and bac
 1. Open your browser and navigate to the login page.
 2. Sign up for a new account or log in with existing credentials.
 3. Access the notice board and courses sections from the main interface.
-
-## Project Structure
 
 
