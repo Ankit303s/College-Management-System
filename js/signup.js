@@ -17,7 +17,7 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
             alert('Signup successful! Redirecting to login page...');
             window.location.href = 'login.html';
         } else {
-            alert(data.message || 'Signup failed!');
+            alert(data.message || 'User already exist');
         }
     } catch (err) {
         console.error(err);
